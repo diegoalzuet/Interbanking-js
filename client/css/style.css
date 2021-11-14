@@ -1,0 +1,249 @@
+nav {
+  font-family: "Arial Narrow";
+}
+nav #logo {
+  font-family: "Rock Salt", cursive;
+  font-size: 2rem;
+}
+nav a {
+  font-size: 1rem;
+}
+
+.altura {
+  height: 115vh;
+}
+
+h1 {
+  font-family: "Rock Salt", cursive;
+  letter-spacing: 1vw;
+  -webkit-text-stroke: 1px black;
+}
+
+h4 {
+  font-family: "Rock Salt", cursive;
+  letter-spacing: 2vw;
+  -webkit-text-stroke: 1px black;
+}
+
+#link-tienda {
+  font-family: "Rock Salt", cursive;
+}
+
+.mask-custom {
+  backdrop-filter: blur(3px);
+  background-color: rgba(17, 17, 17, 0.562);
+  min-height: 115vh;
+}
+
+.parrafos {
+  font-size: 0.6666666667rem;
+  text-align: center;
+  line-height: 2.8rem;
+  letter-spacing: 0.3333333333vw;
+}
+
+.zoom-out {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.zoom-out:hover {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.animar {
+  animation-duration: 4s;
+  animation-name: aparecer;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.parallax__container {
+  clip: rect(0, auto, auto, 0);
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -100;
+}
+
+.parallax {
+  background-image: url("../img/fondo.webp");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  transform: translate3d(0, 0, 0);
+  transform-style: preserve-3d;
+  width: 120%;
+}
+
+.carousel-caption {
+  opacity: 0;
+  background-color: #0e0d0ed2;
+  transition: 600ms ease-in-out;
+  padding: 10px 3px;
+}
+
+.carousel-item:hover .carousel-caption {
+  opacity: 1;
+}
+
+.flecha {
+  animation: arrow 1s ease-in-out infinite;
+}
+.flecha:hover {
+  animation: arrow 1s ease-out infinite !important;
+  color: #229bf4;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.hover-fade p {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background-color: #333;
+}
+.hover-fade img {
+  cursor: zoom-in;
+  transition: all 0.5s ease-in-out;
+}
+.hover-fade:hover img {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+
+/**/
+.container_payment {
+  display: none;
+}
+
+.payment-form {
+  padding-bottom: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
+	font-family: "Helvetica Neue",Helvetica,sans-serif;
+}
+ 
+.payment-form .block-heading {
+  margin-bottom: 30px;
+  text-align: center;
+}
+  
+.payment-form .block-heading p {
+  text-align: center;
+  max-width: 420px;
+  margin: auto;
+  color: RGBA(0,0,0,0.45);
+}
+  
+.payment-form .block-heading h1,
+.payment-form .block-heading h2,
+.payment-form .block-heading h3 {
+  margin-bottom: 1.2rem;
+  color: #067aaf;
+}
+  
+.payment-form .form-payment {
+  border-top: 2px solid #C6E9FA;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+  background-color: #ffffff;
+  padding: 0;
+  max-width: 600px;
+  margin: auto;
+}
+  
+.payment-form .title {
+  font-size: 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.8em;
+  font-weight: 400;
+  padding-bottom: 8px;
+}
+  
+.payment-form .products {
+  background-color: #f7fbff;
+  padding: 25px;
+}
+
+.payment-form .products .item {
+  margin-bottom: 1em;
+}
+  
+.payment-form .products .item-name {
+  font-weight: 500;
+  font-size: 0.9em;
+}
+  
+.payment-form .products .item p {
+  margin-bottom: 0.2em;
+}
+  
+.payment-form .products .price {
+  float: right;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+  
+.payment-form .products .total {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  padding-top: 19px;
+  font-weight: 500;
+  line-height: 1;
+}
+  
+.payment-form .payment-details {
+  padding: 25px 25px 15px;
+  height: 100%;
+}
+
+.payment-form .payment-details label {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #8C8C8C;
+  text-transform: uppercase;
+}
+  
+.payment-form button {
+  margin-top: 0.6em;
+  padding: 12px 0;
+  font-weight: 500;
+  background-color: #009EE3;
+  margin-bottom: 10px;
+}
+
+.payment-form .mercadopago-button {
+  width: 100%;
+  padding: 8px 0;
+} 
+  
+
+/**/
+
+/*# sourceMappingURL=style.css.map */
