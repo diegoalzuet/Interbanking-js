@@ -66,14 +66,14 @@ function updatePrice(orderData) {
   let acumulador = ``;
   orderData.forEach(obra => {
     acumulador += `
-    <h2 class="title">Obra: ${obra.description}</h2>
+    <h2 class="title"><b>Titulo Obra:</b> ${obra.description}</h2>
                     <div class="item">
-                        <span class="price" id="summary-price"> Subtotal: ${obra.price * obra.quantity}</span>
+                        <span class="price" id="summary-price"> <b>Subtotal:</b> $${obra.price * obra.quantity}</span>
                         <p class="item-name">Cantidad: <span id="summary-quantity">${obra.quantity}</span></p>
                     </div>    
     `;
   })
 
-  acumulador += `<div class="total">Total:<span class="price" id="summary-total">$${carrito.calcularTotal()}</span></div>`;
+  acumulador += `<div class="total"><b>Total:</b><span class="price" id="summary-total">$${carrito.calcularTotal()}</span></div>`;
   document.getElementById('products').innerHTML = acumulador;
 }
