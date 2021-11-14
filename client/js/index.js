@@ -19,6 +19,7 @@ document.getElementById("checkout-btn").addEventListener("click", function () {
     })
   })
 
+  
   updatePrice(orderData);
 
   fetch("/create_preference", {
