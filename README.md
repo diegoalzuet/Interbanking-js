@@ -1,21 +1,11 @@
-# Checkout payment processing with Checkout Pro
+# Portfolio con tienda de obras de Arte e integracion con la API de Mercadopago
 
-### This is a simple example of how you can accept payments by integrating our [Checkout PRO](https://www.mercadopago.com/developers/en/guides/online-payments/checkout-pro/introduction)
+### Como ejecutarlo:
 
-### In this repository you will find two main folders:
-
-- `client`: 
-  
-    Basic implementation of a checkout, complying with the necessary security requirements to collect sensitive user information.
-
-- `server`: 
-
-    Basic server-side implementation, which provides static client-side resources and allows the collected information to be published directly to our API to create preference and process payment request using our payment button. 
-
-<br>
-
-## How to run it
-
-Clone or [download](https://github.com/mercadopago/checkout-payment-sample/archive/master.zip) this project, move to the server implementation of your choice and follow its README instructions.
-
-If you are programming in a different language, we offer a client-side sample which will allow you to write your own server-side implementation using our [API Reference](https://www.mercadopago.com/developers/en/reference/preferences/_checkout_preferences/post/) as a guideline.
+1. Clonar el repositorio.
+2. Para probar la integracion se necesitan las credenciales de prueba de Mercadopago (public key y access token).
+    - Linea 3 del archivo **"index.js"** insertar la public key
+    - Linea 8 del archivo **"server.js"** insertar el access token.
+3. Abrir el terminal integrado en la ubicacion del archivo **"server.js"**
+4. Correr el comando: **npm start**
+5. Abrir el navegador en:  **http://localhost:8080**
