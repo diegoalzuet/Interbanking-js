@@ -1,6 +1,6 @@
 // Add SDK credentials
 // REPLACE WITH YOUR PUBLIC KEY AVAILABLE IN: https://developers.mercadopago.com/panel
-const mercadopago = new MercadoPago('PUBLIC--KEY', {
+const mercadopago = new MercadoPago('PUBLIC-KEY', {
   locale: 'es-AR' // The most common are: 'pt-BR', 'es-AR' and 'en-US'
 });
 
@@ -18,7 +18,6 @@ document.getElementById("checkout-btn").addEventListener("click", function () {
       price: obra.precio
     })
   })
-
   
   updatePrice(orderData);
 
@@ -44,6 +43,7 @@ document.getElementById("checkout-btn").addEventListener("click", function () {
       alert("Unexpected error");
       $('#checkout-btn').attr("disabled", false);
     });
+    localStorage.clear();
 });
 
 // Create preference when click on checkout button
@@ -57,7 +57,7 @@ function createCheckoutButton(preferenceId) {
       container: '#button-checkout', // Class name where the payment button will be displayed
       label: 'Pagar', // Change the payment button text (optional)
     }
-  });
+  }); 
 }
 
 // Handle price update
